@@ -2,8 +2,8 @@ var poule1 = ["A", "B", "C", "D", "E"];
 var poule2 = ["A", "B", "C", "D", "E"];
 var result = [];
 
-while (result.length < 8) {
-    console.log('while');
+result.push(poule1[poule1.length-1]+poule2[poule2.length-2]);
+while (result.length < 9) {
     for (var i = 0; i < poule1.length; i++) {
         for (var j = 0; j < poule2.length; j++) {
             if (poule1[i] != poule2[j]) {
@@ -38,21 +38,3 @@ while (result.length < 8) {
     }
 }
 console.log(result);
-
-// if (result[result.length - 1] != poule1[i]+poule2[j] && result[result.length - 1].split('').reverse().join('') != poule1[i]+poule2[j]) {
-//    console.log(poule1[i] + poule2[j]);
-//    result.push(poule1[i] + poule2[j]);
-//  }
-
-// for (var k=0; k<result.length-1 ; k++) {
-//     if (result[k] == poule1[i] + poule2[j] ||
-//         result[k].split("").reverse().join("") == poule1[i] + poule2[j]) {
-//         needpush = false;
-//         break;
-//     }
-// }
-// if (needpush === true) {
-//     console.log(result);
-//     result.push(poule1[i] + poule2[j]);
-// }
-// }
